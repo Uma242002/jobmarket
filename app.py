@@ -40,7 +40,7 @@ st.divider()
 st.subheader(":red[Uni-Variate Analytics (Single Column Data Study):]")
 cola, colb , colc = st.columns(3)
 with colb:
-    colname = st.selectbox("red[Select Column:", df.columns)
+    colname = st.selectbox("Select Column:", df.columns)
 # Create 2 columns for layout
 col1, col2 = st.columns(2)
 
@@ -246,3 +246,4 @@ else:
                 ax.set_ylabel("Count")
                 plt.xticks(rotation=45)
                 st.pyplot(fig)
+
